@@ -5,7 +5,7 @@
 <title>Primera Aplicacion</title>
 
 <!--grupo CSS-->
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/temasapp9.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
 <!--grupo JavaScript-->
@@ -17,144 +17,230 @@
 
 </head>
 
-<body>
+<body >
 
 <div data-role="page" id="Principal" data-theme="a">
-<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
-<h1>Datos personales del alumno </h1>
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b" data-theme = "a">
+<h1>Formulario con Jquery Mobile </h1>
 </div>
 <div data-role="main" class="ui-content">
-<div data-role="collapsible" data-content-theme="false">
-<h1>Foto del Perfil</h1>
-<div>
-<p>Esta es mi imagen de perfil: </p>
+
+<h2><center>Formulario</center></h2>
+
+<form action = "mailto:mijaelcerezo4g.dam@gmail.com" method= "post">
+
+<div data-role="fieldcontain" >
+<label for="name">Nombre  :</label>
+<input type="text" name="name" id="name" value="" />
+</div>
+
+<div data-role="fieldcontain">
+<label for="ape_p">Apellido Paterno :</label>
+<input type="text" name="ape_p" id="ape_p" value="" />
+</div>
+
+<div data-role="fieldcontain">
+<label for="ape_m">Apellido Materno  :</label>
+<input type="text" name="ape_m" id="ape_m" value="" />
+</div>
+
+<div data-role="fieldcontain">
+<label for="tel">Teléfono :</label>
+<input type="number" name="tel" id="tel" value="" />
+</div>
+
+<div data-role="fieldcontain">
+<label for="email">Email:</label>
+<input type="email" name="email " id="email " value="@gmail.com" />
+</div>
+
+<div data-role="fieldcontain">
+<label for="contrasena">Nueva Contraseña :</label>
+<input type="password" name="contrasena" id="contrasena" value="" />
+</div>
+
 <br>
+
+<div align= "center">
+
+<label >Sexo</label>
+<fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal" id = "sexo">
+<input type="radio" name="radio-mini-2" id="radio-mini-1" value="choice-1"
+checked="checked" />
+<label for="radio-mini-1">Masculino </label>
+<input type="radio" name="radio-mini-2" id="radio-mini-2" value="choice-2" />
+<label for="radio-mini-2">Femenino </label>
+<input type="radio" name="radio-mini-2" id="radio-mini-3" value="choice-3" />
+<label for="radio-mini-3">Indefinido</label>
+</fieldset>
 </div>
+
+<br>
+
+<div data-role="fieldcontain" align= "center">
+<label>Fecha de Nacimiento :</label>
+<fieldset data-role="controlgroup"data-type="horizontal" >
+
+<label for="select_mes">Month</label>
+<select name="select_mes" id="select_mes">
+<option>Mes</option>
+<option value="ene">Enero </option>
+<option value="feb">Febrero </option>
+<option value="mar">Marzo </option>
+<option value="abr">Abrir </option>
+<option value="may">Mayo</option>
+<option value="jun">Junio </option>
+<option value="jal">Julio </option>
+<option value="ago">Agosto </option>
+<option value="sep">Septiembre </option>
+<option value="oct">Octubre </option>
+<option value="nov">Noviembre </option>
+<option value="dic">Diciembre </option>
+<!-- etc. -->
+</select>
+<label for="select_dia">Day</label>
+<select name="select_dia" id="select_dia">
+<option>Dia</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<!-- etc. -->
+</select>
+<label for="select_year">Year</label>
+<select name="select_year" id="select_year">
+<option>Año</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<!-- etc. -->
+</select>
+</fieldset>
+</div>
+
+<br>
+<div><h2>Deportes Favoritos </h2></div>
+<div data-role="fieldset">
+<fieldset data-role="controlgroup">
+
+<input type="checkbox" name="futbol" id="futbol" class="custom"
+/>
+<label for="futbol">Fútbol</label>
+<input type="checkbox" name="basquetbol" id="basquetbol" class="custom"
+/>
+<label for="basquetbol">Basquetbol</label>
+</fieldset>
+</div>
+<br>
+<div> 
+<label for="on_off">Desea Activar Nuestra Publicidad :</label>
+<select name="on_off" id="on_off" data-role="slider" data-mini="true">
+<option value="off">Off</option>
+<option value="on">On</option>
+</select>
+</div>
+<br>
+
+<div align= "center">
+
+<label >Nivel Escolar</label>
+<fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal" id = "ecolar">
+<input type="radio" name="radio-mini" id="radio-mini-5" value="choice-5"
+checked="checked" />
+<label for="radio-mini-5">Primaria </label>
+<input type="radio" name="radio-mini" id="radio-mini-6" value="choice-6" />
+<label for="radio-mini-6">Básica </label>
+<input type="radio" name="radio-mini" id="radio-mini-7" value="choice-7" />
+<label for="radio-mini-7">Media Superior</label>
+<input type= "radio" name="radio-mini" id="radio-mini-4" value="choice-4" />
+<label for="radio-mini-4"> Superior</label>
+</fieldset>
+</div>
+<br>
 <div>
-<center><img src="imagenes/yo.jpg" width="260" height="321" > </center></div>
+<label>Estado civil</label>
+<select id="salutation" data-native-menu="false">
+<option id="salPlac" data-placeholder="true" value="">Estado Civil</option>
+<option value="cas">Casado</option>
+<option value="sol">Soltero</option>
+</select>
 </div>
+<br>
+
+<div data-role="fieldcontain" align= "center">
+<label>Especialidad a Nivel técnico que decea estudiar :</label>
+<fieldset data-role="controlgroup"data-type="horizontal" >
+<label for="select_esp">Year</label>
+<select name="select_esp" id="select_esp">
+<option>Especialidad</option>
+<option value="19953">Programación </option>
+<option value="19963">Electricidad </option>
+<option value="19973">Logística </option>
+<option value="19983">Mecánica Industrial </option>
+<!-- etc. -->
+</select>
+</fieldset>
 </div>
+<br>
 <div>
-<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2>Datos generales</h2>
-<p>Se muestra el nombre</p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2>Fecha de Nacimiento</h2>
-<p>Se muestra el dia, mes y año de nacimiento</p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2>DOMICILIO</h2>
-<p>Muestra el domicilio del alumno</p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2>Deporte Favorito</h2>
-<p>Muestra el deporte que mas le agrada al alumno </p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2>OTROS GUSTOS E INTERESES</h2>
-<p>Muestra otros gustos del alumno</p>
-</a>
-</li>
-</ul>
+<label for="slider-fill">Porsentaje que te es util nuestro servicio :</label>
+<input type="range" name="slider-fill" id="slider-fill" value="60" min="0" max="100"
+data-highlight="true" />
 </div>
-<div data-role="footer" align="center" data-theme="a">
+<br>
+<div>
+<label for="comentario ">Algun comentario:</label>
+<textarea name="comentario " id="comentario ">
+Introduce un comentario 
+</textarea>
+</div>
+<br>
+<div>
+<input type= "submit" value= "Enviar">
+</div>
+</form>
+<div>
+<h2>Gracias por contestar mi Formulario </h2>
+</div>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position = "fixed">
   <div>
-  <img src="imagenes/persona_azul.png" width="46" height="46">
-  </div>
-  <div>
-  <h4>Aplicacion Uno</h4>
+  <h4>Instala y Configura Aplicaciones y Servicios </h4>
   <h4>Mijael Flores Cerezo</h4>
   </div>
   </div>
   </div>
-  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
-  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-  <h1>NOMBRE</h1>
- 
-  </div>
-  <div data-role="content" align="center">
-  <div>
-  <h2>Mijael Flores Cerezo</h2>
-  </div>
-  </div>
-  <div data-role="footer" data-theme="a">
-  <h4>Aplicacion Uno, MFC</h4>
-  </div>
-  </div>
-  </div>
- 
-  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
-  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-  <h1>FECHA DE NACIMIENTO</h1>
- </div>
-<div data-role="content" align="center">
- <div>
- <h2>7 de Octubre de 1998</h2></div>
- </div>
- <div data-role="footer" data-theme="a">
- <h4>Aplicacion Uno, MFC</h4>
- </div>
- </div>
- </div>
-
- <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
- <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
- <h1>DOMICILIO</h1>
- </div>
- <div data-role="content" align="center">
- <div>
- <h2>calle Benito Juarez #3 col. Huilotepec Atlixco Puebla</h2></div>
- </div>
- <div data-role="footer" data-theme="a">
- <h4>Aplicacion Uno, MFC</h4>
- </div>
- </div>
- </div>
-
- <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
- <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
- <h1>DEPORTE FAVORITO</h1>
- </div>
- <div data-role="content" align="center">
- <div>
- <h2>Futbool</h2>
- <img src="imagenes/deporte.jpg">
- </div>
- </div>
- <div data-role="footer" data-theme="a">
- <h4>Aplicacion Uno, MFC</h4>
- </div>
- </div>
- </div>
-
- <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
- <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
- <h1>GUSTOS E INTERESES</h1>
- </div>
- <div data-role="content" align="center">
- <div>
- <h2>Ver la televición</h2></div>
- <img src="imagenes/tiempo.jpg">
- </div>
- <div data-role="footer" data-theme="a">
- <h4>Aplicacion Uno, MFC</h4>
- </div>
- </div>
- </div>
-
-
  </body>
  </html>
-
 
